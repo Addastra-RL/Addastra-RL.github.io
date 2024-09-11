@@ -1,0 +1,19 @@
+{{ $params := dict }}
+{{ if .IsNamedParams }}
+{{ $params = .Params }}
+{{ else }}
+{{ $params = dict "img" (.Get 0) }}
+{{ end }}
+
+{{ $image := .Page.Resources.GetMatch $params.img }}
+{{ if not $image }}
+{{ $image = resources.Get $params.img }}
+{{ end }}
+
+{{ if $image }}
+{{ $params = merge $params (dict "img" $image) }}
+{{ else }}
+{{ warnf "Image not found: %s" $params.img }}
+{{ end }}
+
+{{ partial "lazyimg" $params }}
