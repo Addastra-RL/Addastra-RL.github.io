@@ -1,5 +1,5 @@
 ---
-title: "Hugo Community Modules"
+title: "La technique au service de la performance artistique"
 date: "2021-11-22T23:53:44+01:00"
 draft: false
 description: "Hugo Community Mods"

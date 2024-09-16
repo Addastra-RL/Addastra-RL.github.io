@@ -16,28 +16,28 @@ module:
 
 ## Generic theme parameters:
 Params:
-  author: "kdevo"
-  description: "hugo-mods: Powerful community modules for Hugo, a static site generator."
+  author: "Rémi Lacombe"
+  description: "Addastra : Technical R&D for art and magic"
 
   # logoBig appears at the top of the page. Use a path relative to the assets dir for auto-resizing. 
   logoBig: "logo.png"
 
   # logoSmall is the logo that will be shown in the left corner of the nav bar.
   #   Use a path relative to the assets dir for auto-resizing.
-  logoSmall: "logo.png"
+  logoSmall: "logo_small.png"
 
   # background can optionally be specified as an image layer behind logoBig at the top of the page (parallax effect).
-  background: "background.jpg"
+  background: "bg.jpg"
 
   # tagline (followed by a cursor) is shown at the top, below the logo
   #tagline: "Welcome!"
   # mdTagline can be used instead to specify the tagline in Markdown for more customizability.
   # Note that {cursor} is a placeholder and will be replaced by the actual cursor HTML when rendering.
-  mdTagline: "## hugo mod get -u{cursor}"
+  mdTagline: "## R&D for art and magic"
   theme: "hugo-mods"
-  favicon: "logo.png"
+  favicon: "favicon.png"
 
-  opengraphImage: "background.jpg"
+  opengraphImage: "bg.jpg"
 
   # enforceSinglePage will enforce redirection to the baseURL for all sub-directories/-pages.
   #   Example: If you create about.md, Hugo will also create a '/about/index.html' which might not be what you want for a *single* page site. 
@@ -50,7 +50,7 @@ Params:
 ## Social links in footer:
   Social:
   - type: github
-    url: "https://github.com/hugo-mods/"
+    url: "https://github.com/LACOMBE-R/"
   - type: heart
     url: "https://github.com/sponsors/kdevo"
 
@@ -65,7 +65,7 @@ Params:
 
     # structuredDataGitHubUser will tell the theme to use your USERNAME for querying the GitHub API to fetch more information about you for structured data.
     #   This will use information that is publically available about your GitHub user profile at https://api.github.com/users/{USERNAME}.
-    structuredDataGitHubUser: "hugo-mods"
+    structuredDataGitHubUser: "LACOMBE-R"
 
     # useTermynal enables Termynal (https://github.com/ines/termynal), a small JS library for showing a terminal "animation" from within your gallery item.
     #   The library has been stripped-down to a minimum to only have the necessary functionality.
@@ -108,24 +108,24 @@ Menu:
   Main:
 
     - # name represents what's shown to the user in the nav bar. 
-      name: "About"
+      name: "Acceuil"
       # identifier controls the section type (and therewith the appearence).
       identifier: about 
       # url must be an anchor, for smooth scrolling to it when clicking on the menu item.
-      url: "/#about"
+      url: "/#acceuil"
       # weight controls the order of the menu items.
       weight: 1
-    - name: "Mods"
+    - name: "Compétences"
       identifier: gallery
-      url: "/#mods"
+      url: "/#competences"
       weight: 2
-    - name: "Blog"
+    - name: "Réalisations"
       identifier: blog
-      url: "/#blog"
+      url: "/#work"
       weight: 3
-    - name: "Join"
+    - name: "Contact"
       identifier: contact
-      url: "/#join"
+      url: "/#Contact"
       weight: 4
     # - name: ""
     #   # pre makes it possible to use arbitrary HTML before the name, e.g. referencing icons here is possible:

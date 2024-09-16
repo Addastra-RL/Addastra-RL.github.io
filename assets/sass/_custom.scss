@@ -1,24 +1,26 @@
 [data-termynal] {
-    border-radius: 4px;
-    text-align: left;
-    // background: $secondary-bg-color;
+  border-radius: 4px;
+  text-align: left;
+  // background: $secondary-bg-color;
 
-    background: #292e39;
-    color: $byzantine
+  background: #292e39;
+  color: $byzantine
 }
 
 [data-ty] {
-    color: $primary-fg-color;
+  color: $primary-fg-color;
 }
 
 [data-ty="input"]:before,
 [data-ty-prompt]:before {
-    color: $bittersweet;
+  color: $bittersweet;
 }
 
 #termynal-about:after {
-    content: "";
+  content: "";
 }
+
+$mobile-breakpoint: 1300px;
 
 @media (max-width: $mobile-breakpoint) {
   .bg {
@@ -26,6 +28,12 @@
   }
 }
 
-.home-logo { 
+nav {
+  @media (max-width: $mobile-breakpoint) {
+    opacity: 0;
+  }
+}
+
+.home-logo {
   animation: scale-in-center .8s cubic-bezier(.25, .46, .45, .94) both;
 }
