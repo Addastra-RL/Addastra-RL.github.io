@@ -1,5 +1,29 @@
+$mobile-breakpoint: 1300px;
+
+@media (max-width: $mobile-breakpoint) {
+  .bg {
+    background-attachment: scroll;
+  }
+}
+
 nav {
   @media (max-width: $mobile-breakpoint) {
     opacity: 0;
+  }
+}
+
+.nav-fixed {
+  position: fixed;
+  top: 0;
+  bottom: auto;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, .2);
+
+  @media (max-width: $mobile-breakpoint) {
+    opacity: 1;
+    transition: opacity 200ms;
+  }
+
+  a.icon-active>.icon {
+    fill: $full-nav-bg-color;
   }
 }

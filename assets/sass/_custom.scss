@@ -20,20 +20,6 @@
   content: "";
 }
 
-$mobile-breakpoint: 1300px;
-
-@media (max-width: $mobile-breakpoint) {
-  .bg {
-    background-attachment: scroll;
-  }
-}
-
-nav {
-  @media (max-width: $mobile-breakpoint) {
-    opacity: 0;
-  }
-}
-
 .home-logo {
   animation: scale-in-center .8s cubic-bezier(.25, .46, .45, .94) both;
 }
