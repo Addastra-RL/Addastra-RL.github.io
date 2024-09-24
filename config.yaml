@@ -30,10 +30,10 @@ Params:
   background: "bg.jpg"
 
   # tagline (followed by a cursor) is shown at the top, below the logo
-  #tagline: "Welcome!"
+  tagline: ""
   # mdTagline can be used instead to specify the tagline in Markdown for more customizability.
   # Note that {cursor} is a placeholder and will be replaced by the actual cursor HTML when rendering.
-  mdTagline: "## R&D for art and magic"
+  # mdTagline: "## R&D for art and magic"
   theme: "hugo-mods"
   favicon: "favicon.png"
 
