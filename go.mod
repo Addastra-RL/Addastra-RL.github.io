@@ -1,5 +1,4 @@
-module github.com/LACOMBE-R/Addastra-SITE
-
+module github.com/Addastra-RL/Addastra-RL.github.io
 go 1.17
 
 require (
