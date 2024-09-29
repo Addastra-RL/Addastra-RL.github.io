@@ -108,7 +108,7 @@ Menu:
   Main:
 
     - # name represents what's shown to the user in the nav bar. 
-      name: "Acceuil"
+      name: "Accueil"
       # identifier controls the section type (and therewith the appearence).
       identifier: about 
       # url must be an anchor, for smooth scrolling to it when clicking on the menu item.
